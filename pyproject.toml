@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "aicodegen"
 version = "0.1.0"
-description = "AI-Powered Software Engineering and Code Generation Platform"
+description = "AI-Powered Multi-Agent Project Management and Code Generation Platform"
 authors = [{name = "AICodeGen Team", email = "team@aicodegen.dev"}]
 readme = "README.md"
 license = {text = "MIT"}
@@ -23,6 +23,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
+    # Existing AI and code generation dependencies
     "openai>=1.0.0",
     "transformers>=4.30.0",
     "torch>=2.0.0",
@@ -31,6 +32,28 @@ dependencies = [
     "click>=8.0.0",
     "rich>=13.0.0",
     "PyYAML>=6.0",
+    
+    # Multi-agent platform dependencies
+    "fastapi>=0.104.0",
+    "celery>=5.3.0",
+    "sqlalchemy>=2.0.0",
+    "redis>=5.0.0",
+    "chromadb>=0.4.0",
+    "websockets>=11.0.0",
+    "alembic>=1.12.0",
+    "psycopg2-binary>=2.9.0",
+    "langchain>=0.0.350",
+    "uvicorn>=0.24.0",
+    
+    # Additional dependencies for multi-agent functionality
+    "httpx>=0.25.0",
+    "python-multipart>=0.0.6",
+    "python-jose[cryptography]>=3.3.0",
+    "passlib[bcrypt]>=1.7.4",
+    "python-socketio>=5.9.0",
+    "aiofiles>=23.2.1",
+    "asyncpg>=0.29.0",
+    "celery[redis]>=5.3.0",
 ]
 
 [project.optional-dependencies]
@@ -75,3 +98,4 @@ python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 addopts = "--cov=aicodegen --cov-report=term-missing"
+
