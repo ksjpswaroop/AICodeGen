@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "aicodegen"
 version = "0.1.0"
-description = "AI-Powered Software Engineering and Code Generation Platform"
+description = "AI-Powered Multi-Agent Project Management and Code Generation Platform"
 authors = [{name = "AICodeGen Team", email = "team@aicodegen.dev"}]
 readme = "README.md"
 license = {text = "MIT"}
@@ -98,3 +98,4 @@ python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 addopts = "--cov=aicodegen --cov-report=term-missing"
+
